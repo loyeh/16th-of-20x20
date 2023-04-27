@@ -30,7 +30,8 @@ h2 {
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;
-	scale: 1.2;
+	scale: 0.9;
+  animation: beat 10s linear infinite 4s ;
 }
 .circle {
 	border-radius: 100%;
@@ -81,9 +82,16 @@ h2 {
 	position: absolute;
 	left: 30px;
 	top: 190px;
-  animation: planet 8s linear infinite;
+  animation: planet 10s linear infinite;
 }
 @keyframes planet{
   from{rotate: 0deg;}
   to{rotate: 360deg;}
+}
+@keyframes beat {
+  0%{scale: 0.9;}
+  40%{scale: 1.1;}
+  60%{scale: 1.1;}
+  100%{scale: 0.9;}
+  
 }
