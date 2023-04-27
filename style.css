@@ -1,5 +1,89 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: darkblue;
+	background-image: url("images.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h2 {
+	align-self: flex-start;
+	margin-top: 20px;
+	color: white;
+	width: 100vw;
+	text-align: center;
+	position: fixed;
+}
+.container {
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	scale: 1.2;
+}
+.circle {
+	border-radius: 100%;
+}
+.big {
+	position: relative;
+	overflow: hidden;
+
+	width: 200px;
+	height: 200px;
+	background-color: #005959;
+}
+.box {
+	width: 100px;
+	height: 200px;
+	background-color: darkcyan;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.down {
+	background-color: white;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 125px;
+	left: 25px;
+}
+.center {
+	width: 190px;
+	height: 190px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.rotary {
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	transform-origin: 70px -90px;
+	rotate: 90deg;
+	position: absolute;
+	left: 30px;
+	top: 190px;
+  animation: planet 8s linear infinite;
+}
+@keyframes planet{
+  from{rotate: 0deg;}
+  to{rotate: 360deg;}
 }
